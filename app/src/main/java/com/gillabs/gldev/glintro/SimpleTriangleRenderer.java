@@ -227,7 +227,7 @@ public class SimpleTriangleRenderer implements GLSurfaceView.Renderer {
             GLES20.glAttachShader(programHandle, fragmentShaderHandle);
 
             GLES20.glBindAttribLocation(programHandle, 0, "a_Position");
-            GLES20.glBindAttribLocation(programHandle, 1, "a_Position");
+            GLES20.glBindAttribLocation(programHandle, 1, "a_Color");
 
             GLES20.glLinkProgram(programHandle);
 

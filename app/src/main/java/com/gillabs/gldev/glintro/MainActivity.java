@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             mGLSurfaceView.setEGLContextClientVersion(2);
 
             // Set the renderer to our demo renderer defined below
-             mGLSurfaceView.setRenderer(new SimpleTriangleRenderer());
+             mGLSurfaceView.setRenderer(new LightCubeRenderer(this));
         } else {
             // This is where you could create an OpenGL 1.x compatible
             return;
